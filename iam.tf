@@ -16,3 +16,15 @@ resource "aws_iam_role" "role-sample-web" {
         }
     )
 }
+
+resource "aws_iam_group" "staffs" {
+  name = "staffs"
+}
+
+resource "aws_iam_user" "staff" {
+  name = "staff"
+}
+
+resource "aws_iam_user" "terraform" {
+  name = "terraform"
+}
